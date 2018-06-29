@@ -1,0 +1,12 @@
+<div class="pregunta">
+    <div class="card">
+      <div class="card-header">
+        {{pregunta.texto}} <a href="#" class="btn btn-link" (click)="pregunta.esconder=!pregunta.esconder">Mostrar</a>
+        | <a href="#" class="btn btn-link" (click)="borrarPregunta(pregunta)">Borrar</a>
+      </div>
+      <div class="card-body" [hidden]="pregunta.esconder">
+        <p class="card-text">{{pregunta.respuesta}}</p>
+      </div>
+    </div>
+    <br>
+  </div>
